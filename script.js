@@ -18,7 +18,7 @@ var inputSpecialChar;
 // Define generatePassword
 function generatePassword() {
 // 1. Prompt user for password criteria
-//  a. Length 8 - 128 char
+//  A. Confirm character length: 8 - 128 char range
     var inputLength = (prompt("Enter the character length for your password."));
     // Validate Input - Error if not between 8 - 128 character range.
     while (inputLength <= 7 || inputLength >= 129) {
@@ -28,18 +28,34 @@ function generatePassword() {
 
     // If user input in range, show length of password characters.
     alert("Password length will be " + inputLength + " characters long.");
-  
-//  b. lowercase
-    var inputLowerCase = confirm("Add lowercase characters? hit 'OK' to include lowercase characters. hit 'Cancel' to not include.");
-//  c. uppercase
-    var inputUpperCase = confirm("Add UPPERCASE characters? hit 'OK' to include lowercase characters. hit 'Cancel' to not include.");
-//  d. numbers
-    var inputNumbers = confirm("Add Number characters? hit 'OK' to include lowercase characters. hit 'Cancel' to not include.");
-//  e. special characters
-    var inputSpecialChar = confirm("Add Special characters? hit 'OK' to include lowercase characters. hit 'Cancel' to not include.");
 
+//  B. Ask parameters     
+      //  a. lowercase
+      var inputLowerCase = confirm("Add lowercase characters? hit 'OK' to include lowercase characters. hit 'Cancel' to not include.");
+      //  b. uppercase
+      var inputUpperCase = confirm("Add UPPERCASE characters? hit 'OK' to include lowercase characters. hit 'Cancel' to not include.");
+      //  c. numbers
+      var inputNumbers = confirm("Add Number characters? hit 'OK' to include lowercase characters. hit 'Cancel' to not include.");
+      //  d. special characters
+      var inputSpecialChar = confirm("Add Special characters? hit 'OK' to include lowercase characters. hit 'Cancel' to not include.");
 
-// 2. Validate input
+      // at least one of these must be accepted as 'OK'
+      while (
+        inputLowerCase    === false && 
+        inputUpperCase    === false && 
+        inputNumbers      === false &&
+        inputSpecialChar  === false) {
+
+          alert("One parameter must be selected. Try again and select at least 1 parameter.");
+
+          // Ask user parameters again.
+          var inputLowerCase = confirm("Add lowercase characters? hit 'OK' to include lowercase characters. hit 'Cancel' to not include.");
+          var inputUpperCase = confirm("Add UPPERCASE characters? hit 'OK' to include lowercase characters. hit 'Cancel' to not include.");
+          var inputNumbers = confirm("Add Number characters? hit 'OK' to include lowercase characters. hit 'Cancel' to not include.");
+          var inputSpecialChar = confirm("Add Special characters? hit 'OK' to include lowercase characters. hit 'Cancel' to not include.");
+          
+        }
+
 // 3. Generate password based on criteria
 
 
