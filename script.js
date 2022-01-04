@@ -20,6 +20,7 @@ function generatePassword() {
 // 1. Prompt user for password criteria
 //  A. Confirm character length: 8 - 128 char range
     var inputLength = (prompt("Enter the character length for your password."));
+
     // Validate Input - Error if not between 8 - 128 character range.
     while (inputLength <= 7 || inputLength >= 129) {
       alert("Try again. Password length must be between 8 - 128 characters.");
@@ -57,14 +58,24 @@ function generatePassword() {
         }
 
 // 3. Generate password based on criteria
+      // a. initialize key - use array
+      var passwordKey = []
 
+          // i. Add user-selected parameters to initialized key - use 'if' statements
+          if (inputLowerCase) {passwordKey = passwordKey.concat(lowerCase)}
+          if (inputUpperCase) {passwordKey = passwordKey.concat(upperCase)}
+          if (inputNumbers) {passwordKey = passwordKey.concat(numbers)}
+          if (inputSpecialChar) {passwordKey = passwordKey.concat(specialChar)}
 
+      // b. Generate password based on length and key with for loop
+      var newRandomPassword = ""
 
-// 4. Display password
-
-
-// remove undefined  
-  return "generated password here"
+          // i. Loop through user-selected password preferences until the desired length met.
+          for (var i = 0; i < inputLength; i++) {
+            newRandomPassword = newRandomPassword + passwordKey[Math.floor(Math.random() * passwordKey.length)];
+          }
+      //c. Return the random string now known as new generated password.
+      return newRandomPassword;
 }
 
 // Write password to the #password input
