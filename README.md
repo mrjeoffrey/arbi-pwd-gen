@@ -18,24 +18,15 @@ Open folder in VisualStudioCode and modify `index.html`
 
 ## Usage
 
-| Screenshot | Mobile |
-| ------- | ------ |
-| ![devfolio desktop version 1.0](assets/screenshots/devfolio-desktop-v1.png) | ![devfolio mobile version 1.0](assets/screenshots/devfolio-mobile-v1.png) |
+![arbi password gen desktop](reqs/Assets/Screenshots/Arbi-Password-Gen.gif) 
 
 ## LIVE
 | DEPLOYMENT | URL | STATUS |
 | ---------- | --- | ------ |
-| Repository  | [github.com/mrjeoffrey/devfolio](https://github.com/mrjeoffrey/horiseon-ada) |  ACTIVE 🟢   |
-| Published Page     | [mrjeoffrey.github.io/devfolio](https://mrjeoffrey.github.io/devfolio/) | ACTIVE 🟢  |
-| Beta     | [mrjeoffrey.github.io/devfolio/extended-index.html](https://mrjeoffrey.github.io/devfolio/extended-index.html) | ACTIVE 🟢  |
+| Repository  | [github.com/mrjeoffrey/arbi-pwd-gen](https://github.com/mrjeoffrey/arbi-pwd-gen) |  ACTIVE 🟢   |
+| Published Page     | [mrjeoffrey.github.io/arbi-pwd-gen](https://mrjeoffrey.github.io/arbi-pwd-gen/) | ACTIVE 🟢  |
 
 ## Credits
-
-| Contributors | Role |
-| ----- | ---- |
-| [Marcus Lewis](https://github.com/lewisemarcus) | image overlay positioning, flexgrid techniques |
-| [Tyler Welker](https://github.com/twelk) | performed code reviews and regression testing |
-| [Jason Yoo](https://github.com/jasonjayoo) | performed code reviews and regression testing |
 
 | Resources | Descriptions |
 | --------- | ------------ |
