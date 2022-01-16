@@ -2,7 +2,7 @@
 Arbi, aka Arbiter, is a Password Generator that lets users generate password based on criteria suchas length, lowercase, uppercase, numbers and special characters. 
 
 ## Install
-To use this portfolio as a template, open `terminal` or `gitbash` and move to Desktop
+To use this password generator as a template, open `terminal` or `gitbash` and move to Desktop
  
     cd desktop
 
